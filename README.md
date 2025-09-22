@@ -36,8 +36,8 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kyuk9&show_icons=true&theme=radical" width="400"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kyuk9&layout=compact&theme=radical" width="300"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical" width="400"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical" width="300"/>
 </p>
 
 ---
