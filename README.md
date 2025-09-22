@@ -15,7 +15,7 @@
 - 🧠 Working on projects that solve real-world problems using data
 - 💡 Goal: To become a **Data Scientist** who can derive insights from complex datasets
 - 📫 How to reach me:  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ChahakAdwani)  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/chahak-adwani)  
   📧 Email: ca1262004@gmail.com
 
 ---
