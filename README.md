@@ -25,8 +25,8 @@
 Here are a few projects from my GitHub that I'm actively working on or have completed:
 
 ### 📊 web development  Projects
-- **[Param Vastra](https://github.com/Chahak12621/paramvastra)** – Exploring trending traditional clothes in this e-shopping webiste 
-- **[Quiz management app ](https://github.com/Chahak12621/quiz-management-app)** – Interactive quiz maangement app for students 
+- **[Param Vastra](https://github.com/Chahak12621/Param-Vastra)** – Exploring trending traditional clothes in this e-shopping webiste 
+- **[Quiz management app ](https://github.com/Chahak12621/Quiz_management_app)** – Interactive quiz maangement app for students 
 
 
 > 🔗 *More projects coming soon...*
