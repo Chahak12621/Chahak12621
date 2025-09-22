@@ -20,7 +20,7 @@
 
 ---
 
-## 🚀 Projects I'm Proud Of
+## 🚀 My Projects
 
 Here are a few projects from my GitHub that I'm actively working on or have completed:
 
