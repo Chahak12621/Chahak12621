@@ -26,7 +26,8 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 
 ### 📊 web development  Projects
 - **[Param Vastra](https://github.com/Chahak12621/Param-Vastra)** – Exploring trending traditional clothes in this e-shopping webiste 
-- **[Quiz management app ](https://github.com/Chahak12621/Quiz_management_app)** – Interactive quiz maangement app for students 
+- **[Quiz management app ](https://github.com/Chahak12621/Quiz_management_app)** – Interactive quiz management app for students
+- **[Social_Media_Trends_analysis ](https://github.com/Chahak12621/Social_media_trends_analysis)** – Exploratory Data Analytics project
 
 
 > 🔗 *More projects coming soon...*
@@ -36,7 +37,7 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical" width="400"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&refresh=truetheme=radical" width="400"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical" width="300"/>
 </p>
 
