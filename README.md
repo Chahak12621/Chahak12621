@@ -46,7 +46,7 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 
 ```text
 Languages:    Python, SQL , Javascript
-Libraries:    Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib
+Libraries:    Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib ,beautifulsoup , pytorch , tensorflow
 BI Tools:     Power BI
 Dev Tools:    Git, GitHub, Jupyter Notebook, VS Code
 Frameworks:   React , Vue
