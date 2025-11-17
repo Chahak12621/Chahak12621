@@ -15,7 +15,7 @@
   - 🎨 **Frontend:** HTML, CSS, JavaScript, React  
   - ⚙️ **Backend:** Node.js, Flask  
   - 🗃️ **Database:** MongoDB, SQL  
-  - 📚 **Libraries:** Scikit-learn, Matplotlib, Seaborn, NumPy, Pandas, TensorFlow  
+  - 📚 **Libraries:** Scikit-learn, Matplotlib, Seaborn, NumPy, Pandas, TensorFlow , Keras
 
 - **Currently learning** : - "Deep learning" , "Generative AI"
       
@@ -31,9 +31,8 @@
 
 Here are a few projects from my GitHub that I'm actively working on or have completed:
 
-### 📊 web development  Projects
 - **[Param Vastra](https://github.com/Chahak12621/Param-Vastra)** – Exploring trending traditional clothes in this e-shopping webiste 
-- **[Quiz management app ](https://github.com/Chahak12621/Quiz_management_app)** – Interactive quiz management app for students
+- **[Edzee](https://github.com/Chahak12621/Edzee)** – An AI powered quiz generator and learning planner with multiplayer games.
 - **[Social_Media_Trends_analysis ](https://github.com/Chahak12621/Social_media_trends_analysis)** – Exploratory Data Analytics project
 
 
