@@ -43,17 +43,10 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 <!-- ===================== GitHub Stats ===================== -->
 
 <p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical&cache_seconds=1800"
-    width="420"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical&cache_seconds=1800"
-    width="340"
-    alt="Top Languages"
-  />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical" />
 </p>
+
 
 <p align="center">
   <img
