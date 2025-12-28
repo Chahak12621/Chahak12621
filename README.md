@@ -42,7 +42,7 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 
 ## 📈 GitHub Stats
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical" width="420" alt="GitHub Stats"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical" width="340" alt="Top Languages"/> </p> <p align="center"> <img src="https://streak-stats.demolab.com?user=Chahak12621&theme=radical&border_radius=5" width="430" alt="GitHub Streak Stats"/> </p> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=Chahak12621&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies"/> </p> <p align="center"> <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Chahak12621&theme=radical" width="500" alt="Profile Summary Card"/> </p> <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Chahak12621&theme=redical&bg_color=141321&hide_border=true" width="700" alt="Activity Graph"/> </p> <p align="center"> <img src="https://komarev.com/ghpvc/?username=Chahak12621&label=Profile%20Views&color=ff69b4&style=flat" alt="Profile Views"/> </p>
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical" width="420" alt="GitHub Stats"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical" width="340" alt="Top Languages"/> </p> <p align="center"> <img src="https://streak-stats.demolab.com?user=Chahak12621&theme=radical&border_radius=5" width="430" alt="GitHub Streak Stats"/> </p> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=Chahak12621&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies"/> </p> <p align="center"> <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Chahak12621&theme=radical" width="500" alt="Profile Summary Card"/> </p> <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Chahak12621&theme=radical&bg_color=141321&hide_border=true" width="700" alt="Activity Graph"/> </p> <p align="center"> <img src="https://komarev.com/ghpvc/?username=Chahak12621&label=Profile%20Views&color=ff69b4&style=flat" alt="Profile Views"/> </p>
 
 
 
@@ -54,10 +54,11 @@ Here are a few projects from my GitHub that I'm actively working on or have comp
 ## 🛠️ Tools & Technologies
 
 ```text
-Languages:    Python, SQL , Javascript
+Languages:    Python, SQL , Javascript, R
 Libraries:    Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib ,beautifulsoup , pytorch , tensorflow
 BI Tools:     Power BI
 Dev Tools:    Git, GitHub, Jupyter Notebook, VS Code
 Frameworks:   React , Vue
+data science: ETL , cloud(AWS,Snowflake), EDA
 
 
