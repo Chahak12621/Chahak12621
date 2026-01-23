@@ -11,11 +11,10 @@
 - 🎓 I'm currently pursuing a **Bachelors in Data Science from IIT Madras**
 - 🔍 Interested in **Data Analysis**, **Machine Learning**, and **AI**
 - 🌱 **Major Skills:**  
-  - 🐍 **Languages:** Python, Java  
+  - 🐍 **Languages:** Python, R  
   - 🎨 **Frontend:** HTML, CSS, JavaScript, React  
-  - ⚙️ **Backend:** Node.js, Flask  
-  - 🗃️ **Database:** MongoDB, SQL  
-  - 📚 **Libraries:** Scikit-learn, Matplotlib, Seaborn, NumPy, Pandas, TensorFlow , Keras
+  - ⚙️ **Data Science:** Machine learning , data visualisations , analytics tools (power bi , tableau , jupyter notebooks)  
+  - 📚 **Libraries:** Scikit-learn, Matplotlib, Seaborn, NumPy, Pandas, TensorFlow , Keras , AI(LLangchain , vector databases , huggingface)
 
 - **Currently learning** : - "Deep learning" , "Generative AI"
       
@@ -94,6 +93,5 @@ Libraries:    Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib ,beautifulsoup , 
 BI Tools:     Power BI
 Dev Tools:    Git, GitHub, Jupyter Notebook, VS Code
 Frameworks:   React , Vue
-data science: ETL , cloud(AWS,Snowflake), EDA
 
 
