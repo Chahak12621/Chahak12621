@@ -101,7 +101,8 @@ Data Science undergraduate with strong foundations in **statistics, machine lear
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Chahak12621&theme=radical&border_radius=5" width="430"/>
+ <img src="https://streak-stats.demolab.com?user=Chahak12621&theme=dark&hide_border=true" />
+
 </p>
 
 <p align="center">
