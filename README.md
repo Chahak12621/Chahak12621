@@ -99,20 +99,10 @@ Data Science undergraduate with strong foundations in **statistics, machine lear
   <img src="https://github-readme-stats.vercel.app/api?username=Chahak12621&show_icons=true&theme=radical&cache_seconds=1800" width="420"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chahak12621&layout=compact&theme=radical&cache_seconds=1800" width="340"/>
 </p>
-
-<p align="center">
- <img src="https://streak-stats.demolab.com?user=Chahak12621&theme=dark&hide_border=true" />
+<p align="center>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Chahak12621&theme=github-dark&hide_border=true" />
 
 </p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Chahak12621&theme=radical&no-frame=true"/>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Chahak12621&label=Profile%20Views&color=ff69b4&style=flat"/>
-</p>
-
 ---
 
 ⭐️ *Open to internships, research roles, and full-time opportunities in Data Science, ML, and AI.*
