@@ -1,21 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chahak's Portfolio - Decision Scientist</title>
     <style>
-        body { font-family: Arial; margin: 40px; }
-        h1 { color: #333; }
-        ul { list-style-type: none; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0a0a0a; --bg-secondary: #1a1a1a; --accent: #00d4ff;
+            --text-primary: #ffffff; --text-secondary: #b0b0b0; --border: rgba(0,212,255,0.2);
+        }
+        [data-theme="light"] {
+            --bg-primary: #f8fafc; --bg-secondary: #e2e8f0; --text-primary: #1e293b;
+            --text-secondary: #64748b; --border: rgba(0,212,255,0.1);
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary); color: var(--text-primary); line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navbar */
+        nav { 
+            position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px); z-index: 1000; transition: all 0.3s ease;
+        }
+        nav.scrolled { background: rgba(10,10,10,0.98); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--text-primary); text-decoration: none; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+        .theme-toggle { background: none; border: 2px solid var(--border); color: var(--text-primary); 
+                        padding: 0.5rem 1rem; border-radius: 25px; cursor: pointer; transition: all 0.3s; }
+        .theme-toggle:hover { background: var(--accent); color: var(--bg-primary); }
+
+        /* Hero */
+        .hero { 
+            height: 100vh; display: flex; align-items: center; justify-content: center; 
+            text-align: center; background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(0,212,255,0.1) 0%, transparent 70%); animation: float 20s infinite;
+        }
+        @keyframes float { 0%,100%{transform:translateY(0)rotate(0deg);}50%{transform:translateY(-20px)rotate(180deg);} }
+        .hero-content h1 { 
+            font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 1rem; 
+            background: linear-gradient(45deg, var(--accent), #ffffff); -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; background-clip: text; opacity: 0; animation: fadeInUp 1s 0.5s forwards;
+        }
+        .hero-content p { 
+            font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-secondary); 
+            opacity: 0; animation: fadeInUp 1s 1s forwards;
+        }
+        .cta-button { 
+            display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(45deg, var(--accent), #0099cc);
+            color: white; text-decoration: none; border-radius: 50px; font-weight: bold; 
+            transition: all 0.3s; box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+            opacity: 0; animation: fadeInUp 1s 1.5s forwards;
+        }
+        .cta-button:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,212,255,0.4); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Sections */
+        section { padding: 100px 0; }
+        section:nth-child(even) { background: var(--bg-secondary); }
+        h2 { 
+            font-size: 3rem; text-align: center; margin-bottom: 4rem; 
+            background: linear-gradient(45deg, var(--accent), #ffffff); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        /* Projects */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .project-card { 
+            background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 20px; 
+            padding: 2rem; border: 1px solid var(--border); transition: all 0.4s; position: relative; overflow: hidden;
+        }
+        .project-card::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; 
+            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.2), transparent); 
+            transition: left 0.5s; 
+        }
+        .project-card:hover::before { left: 100%; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .project-card h3 { color: var(--accent); margin-bottom: 1rem; }
+        .project-card p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+        /* Skills */
+        .skills { display: flex; flex-direction: column; gap: 2rem; }
+        .skill-group h3 { margin-bottom: 1rem; color: var(--accent); }
+        .skill-bar { 
+            background: rgba(255,255,255,0.1); height: 10px; border-radius: 5px; 
+            overflow: hidden; margin-bottom: 0.5rem;
+        }
+        .skill-progress { 
+            height: 100%; background: linear-gradient(90deg, var(--accent), #0099cc); 
+            width: 0; border-radius: 5px; transition: width 2s ease-in-out;
+        }
+        .skill-animate .skill-progress { animation: grow 2s forwards; }
+        @keyframes grow { to { width: var(--width); } }
+
+        /* Contact */
+        .contact-content { max-width: 600px; margin: 0 auto; text-align: center; }
+        .contact-content p { font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-secondary); }
+        <!--email_off-->24f1000451@ds.study.iitm.ac.in<!--/email_off-->
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
-    <h1>Hi, I'm [YOUR NAME]!</h1>
-    <p>I'm a developer showcasing my work. Here's what I've built:</p>
-    <ul>
-        <li>Project 1: A cool app (link to GitHub repo)</li>
-        <li>Project 2: Another project</li>
-    </ul>
-    <!--email_off-->24f1000451@ds.study.iitm.ac.in<!--/email_off-->
-    <p>Email hidden above for verification.</p>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Chahak Adwani</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h1>Hi, I'm <span style="color: var(--accent);">Chahak Adwani</span></h1>
+            <p>Web Developer | Hackathon Enthusiast | Data Scientist</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🌿 Edzee</h3>
+                    <p>AI powered quiz generator and exam prep strategy genearator , it also has different chatbot tutors for different subjects and comprehension practise too .</p>
+                    <a href="#" style="color: var(--accent);">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>✈️ Sadyaatra.AI</h3>
+                    <p>Full-stack travel booking system with payment integration, real-time pricing, and user analytics.</p>
+                    <a href="#" style="color: var(--accent);">View Project →</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--width: 90%;"></div></div>
+                    <span>JavaScript, React, HTML/CSS</span>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--width: 85%;"></div></div>
+                    <span>Python, Node.js, APIs</span>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--width: 95%;"></div></div>
+                    <span>Bash, Git, VS Code, Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>Let's build something amazing together! Open to hackathons, collaborations, and sustainability projects.</p>
+                <p>Email hidden above for verification (check page source).</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            document.body.dataset.theme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+            document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'light' ? '🌙' : '☀️';
+        }
+
+        // Animate skills on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('skill-animate');
+                }
+            });
+        });
+        document.querySelectorAll('.skill-group').forEach(el => observer.observe(el));
+
+        // Parallax hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            document.querySelector('.hero').style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
 </body>
 </html>
